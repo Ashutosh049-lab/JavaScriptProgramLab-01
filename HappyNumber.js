@@ -1,7 +1,7 @@
 
 function HappyNumber(N){
 
-    while(N>9){
+    while(N !=1 && N !=4){
         let sum=0;
 
         while(N>0){
