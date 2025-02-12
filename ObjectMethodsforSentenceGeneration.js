@@ -1,14 +1,14 @@
 
 
 let sentenceBuilder={
-    sub:"I",
+    subject:"I",
     verb:"am",
     obj:"coding",
 
 
     buildSentence:function(){
-        return this.sub && this.verb && this.obj
-        ? `${this.sub} ${this.verb} ${this.obj}`:"Incomplete Sentence";
+        return this.subject && this.verb && this.obj
+        ? `${this.subject} ${this.verb} ${this.obj}`:"Incomplete Sentence";
 
     },
 
@@ -22,4 +22,11 @@ let sentenceBuilder={
         }
     }
 };
+console.log(sentenceBuilder.buildSentence());
+
+sentenceBuilder.updateProperty("verb","am learning")
+console.log(sentenceBuilder.buildSentence());
+
+
+sentenceBuilder.updateProperty("subject","the cat")
 console.log(sentenceBuilder.buildSentence());
