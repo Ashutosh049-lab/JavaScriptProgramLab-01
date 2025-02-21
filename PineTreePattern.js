@@ -16,6 +16,13 @@ function printPineTree(N){
         }
         console.log(bag);
     }
+
+    let trunk="";
+    for(let i=1;i<=N-1;i++){
+        trunk +=" ";
+    }
+    trunk +="*"
+    console.log(trunk);
 }
 
 printPineTree(5)
