@@ -1,13 +1,17 @@
 
 
-
-for(let i=1;i<=10;i++){
-let temp=""
-for(let j=1;j<=i;j++){
-
-temp=temp+j;
-
+function printTriangle(n){
+let res=1
+for(let i=1;i<=n;i++){
+let bag=""
+for(let j=1;j<i;j++){
+   
+   bag=bag+res+" "
+   res++
+ 
 }
-console.log(temp)
+console.log(bag)
 }
+}
+printTriangle(5)
 
