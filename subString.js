@@ -9,12 +9,12 @@ function generateSubString(str){
         
         for(let j=i;j<str.length;j++){
               
-            let temp="";
+            let sub="";
 
             for(let k=i;k<=j;k++){
-                temp=temp+str[k];
+                sub=sub+str[k];
             }
-            console.log(temp);
+            console.log(sub);
         }
     }
 }
