@@ -19,5 +19,5 @@ function generateSubString(str){
     }
 }
 
-str="Masai";
+str="Aasai";
 generateSubString(str);
