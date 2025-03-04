@@ -18,5 +18,5 @@ function sub(arr){
     
   }
   
-  let arr=[1,2,3,5]
+  let arr=[1,2,3,5,6]
   sub(arr);
