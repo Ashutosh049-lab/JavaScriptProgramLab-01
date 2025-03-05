@@ -24,6 +24,35 @@ function checkAnagram(S1,S2){
      }
      
      return console.log("True")
+
+
+
+     // remove time complexity
+     
+//     if(s.length !==t.length){
+//         return false;
+//     }
+
+//    let count=Array(128).fill(0);
+//     let i=0;
+//    while(i<s.length){
+//      let charA=s.charCodeAt(i)-65;
+//      count[charA]++;
+//      let charB=t.charCodeAt(i)-65;
+//      count[charB]--;
+
+//      i++
+     
+//    }
+
+//    for(let i=0;i<128;i++){
+
+//     if(count[i] !=0){
+//         return false;
+//     }
+//    } 
+
+//    return true
      
 
 }
