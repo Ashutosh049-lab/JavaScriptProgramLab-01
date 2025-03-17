@@ -9,4 +9,4 @@ function factor(n){
       }
     }
 }
-factor(14)
+factor(15)
