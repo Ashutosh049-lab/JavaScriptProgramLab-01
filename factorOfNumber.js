@@ -9,4 +9,4 @@ function factor(n){
       }
     }
 }
-factor(40)
+factor(45)
