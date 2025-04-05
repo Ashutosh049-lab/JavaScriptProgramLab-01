@@ -1,0 +1,49 @@
+function solve(n,m,matrix){
+  
+  let mid=Math.floor(m/2)
+ // console.log(mid)
+  let sum1=0
+  for(let i=0;i<n;i++){
+    sum1+=matrix[i][mid]
+  }
+  
+  
+  for(let i=mid+1;i<m;i++){
+    
+      sum1+=matrix[0][i]
+     
+  }
+  for(let i=0;i<mid;i++){
+    sum1+=matrix[n-1][i]
+  }
+ // console.log(sum1)
+  
+  
+  // sum-2
+ // console.log(n)
+  let mid1=Math.floor(n/2);
+  //console.log(mid1)
+  let sum2=0
+  for(let i=0;i<m;i++){
+    
+    
+      sum2+=matrix[mid1][i]
+    
+  }
+  
+  
+  
+  for(let i=0;i<mid1;i++){
+    sum2+=matrix[i][0]
+  }
+  
+  for(let i=mid1+1;i<n;i++){
+    sum2+=matrix[i][m-1]
+  }
+  
+  // console.log(sum1)
+   //console.log(sum2)
+  let total=Math.abs(sum1-sum2);
+  console.log(total)
+  
+}
